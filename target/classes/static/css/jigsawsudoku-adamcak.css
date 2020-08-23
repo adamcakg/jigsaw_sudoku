@@ -1,0 +1,340 @@
+.body{
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #b5e9fc, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #b5e9fc, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    color: #2980B9;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+@media (max-width: 991px) {
+    .image{
+        display: none;
+    }
+}
+
+
+.image img{
+
+    max-width: 300px;
+}
+
+.padding p{
+    padding-top: 6rem;
+}
+
+.center{
+   position: center;
+    padding-top: 4rem;
+}
+
+.red{
+   background-color: red;
+
+}
+.red a{
+    color: white;
+}
+
+.white{
+    color: black;
+}
+
+.color1{
+    background-color: #7291ee;
+}
+
+.color2{
+    background-color: #ee9172;
+}
+
+.color3{
+    background-color: #05b374;
+}
+
+.color4{
+    background-color: #72eeb0;
+}
+
+.color5{
+    background-color:#7272ee;
+}
+
+.color6{
+    background-color: #ee72b0;
+}
+
+.color7{
+    background-color: #79e779;
+}
+
+.color8{
+    background-color: #c471ed;
+}
+
+.color9{
+    background-color: #12c2e9;
+}
+
+
+
+.size{
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    border: 2px solid rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+
+}
+
+@media (max-width: 480px) {
+    .size{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 350px) {
+    .size{
+        width: 30px;
+        height: 30px;
+    }
+
+
+}
+
+@media (max-width: 380px) {
+
+    .lower{
+        font-size: 2.5rem !important;
+    }
+
+}
+
+
+.mytable a{
+    display: block;
+}
+.mytable{
+    margin: 0 auto;
+}
+
+.mytable p{
+    position: relative;
+}
+
+.mytable p a{
+    text-decoration: none;
+}
+
+.mytable p a:hover, .mytable p a:focus{
+    text-decoration: none;
+}
+
+.link{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+footer p {
+    text-align: center;
+}
+
+.menu{
+    /*background-color: rgba(255,255,255,0.7); */
+    border-radius: 9px;
+    margin-top: 3rem;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a{
+    width: 40px;
+    height: 40px;
+    /*background-color: gray; */
+    color: white;
+    border-radius: 9px;
+    border: 2px solid rgba(255,255,255,0.8);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.menu a:hover, .menu a:focus{
+    text-decoration: none;
+    transform: scale(1.1);
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+}
+
+
+.bg{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.game{
+   /*background-color: rgba(255,255,255,0.7);*/
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    margin-left:auto;
+    margin-right:auto;
+    width: 250px;
+}
+
+
+.game a{
+    width: 40px;
+    height: 40px;
+   /* background-color: gray; */
+    color: white;
+    border-radius: 9px;
+    border: 2px solid rgba(255,255,255,0.8);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.game a:hover, .game a:focus{
+    text-decoration: none;
+    transform: scale(1.1);
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.center{
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+}
+
+.center h2{
+    font-size: 3em;
+}
+
+.center p{
+    font-size: 1em;
+}
+
+.move{
+    padding-top: 0.75rem;
+}
+
+.commenttable{
+    overflow: auto;
+    display: block;
+    color: white;
+    border-radius: 9px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.scoretable{
+    overflow: auto;
+    display: block;
+    border-radius: 9px;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+}
+
+.scoretable table{
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.buttonCenter{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.big{
+    font-size: 4rem;
+}
+
+
+
+
+
+.bigger{
+    font-size: 9rem;
+}
+
+.margin{
+    margin-top: 5rem;
+}
+
+.marginToSubmit{
+    margin-top: 2rem;
+}
+
+/* buttons of rating*/
+.value {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10em;
+    width: 300px;
+    height: 100px;
+    line-height: 60px;
+    margin: 40px auto;
+    letter-spacing: -0.07em;
+}
+input[type="range"] {
+    display: block;
+    -webkit-appearance: none;
+    background-color: white;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+​ input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: white;
+    border: 2px solid white;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.6);
+}

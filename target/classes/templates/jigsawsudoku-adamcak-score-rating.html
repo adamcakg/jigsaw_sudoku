@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Comment</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/jigsawsudoku-adamcak.css}">
+
+</head>
+<body class="body">
+
+<header id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg">
+        <a class="navbar-brand" href="main">JigsawSudoku</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="game">Play</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="score">Score</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comment">Comment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rating">Rating</a>
+                </li>
+            </ul>
+        </div>
+        <div class="image">
+            <a href="https://kpi.fei.tuke.sk/">
+                <img th:src="@{/images/jigsawsudoku/adamcak/kpi-header.png}">
+            </a>
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto ">
+               <div>
+                   <div class="center">
+                        <h2>Hall of fame</h2>
+                   </div>
+                   <div class="scoretable">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th>Points</th>
+                                <th>Played on</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr th:each="score: ${scores}">
+                                <td th:text="${score.player}"></td>
+                                <td th:text="${score.points}"></td>
+                                <td th:text="${score.playedOn}"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="footer" >
+    <div class="container">
+        <p>
+            (c) 2019 Gabriel Adamcak
+        </p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="../js/jigsawsudoku-adamcak.js" ></script>
+</body>
+
+</html>
